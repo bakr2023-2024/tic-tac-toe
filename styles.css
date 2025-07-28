@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+#container {
+  width: 30vw;
+  height: 30vw;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+.cell {
+  border: 1px solid black;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#announcementDiv,
+#scoreDiv {
+  border: 1px dashed black;
+  font-size: 3rem;
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+#controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
